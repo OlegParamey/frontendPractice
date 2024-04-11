@@ -1,3 +1,4 @@
+
 let user = {
     name: "John",
     age: 30
@@ -15,5 +16,6 @@ let user = {
   }
 //применяем функцию для копирования и имеем новый независимый объект
 let CloneUser = GetCloneObject(user);
+let NewClone = GetCloneObject(user);
   // теперь CloneUser это полностью независимый объект с тем же содержимым
 
