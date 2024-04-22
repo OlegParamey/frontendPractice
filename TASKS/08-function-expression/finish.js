@@ -10,3 +10,9 @@
  *
  * 5. Результат вызовов функции выведите в консоль
  */
+let FunctionExpression = function (name) {
+      return `Привет ${name}`
+    } 
+
+console.log(FunctionExpression('Oleg'));
+console.log(FunctionExpression('Wiktor'));
