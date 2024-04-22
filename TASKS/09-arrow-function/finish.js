@@ -10,3 +10,11 @@
  *
  * 5. Перепишите функцию так, чтобы результат возвращался неявно
  */
+let arrowFunc = () => "Привет, мир!" ;
+
+let arrowFunc2 = () =>{
+    return "Привет, мир!"
+}
+
+console.log(arrowFunc());
+console.log(arrowFunc2());
