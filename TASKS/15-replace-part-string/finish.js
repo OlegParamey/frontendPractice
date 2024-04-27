@@ -6,3 +6,6 @@
  *
  * 3. Выведите значение второй переменной в консоль
  */
+let variable = 'Good Morning';
+let new_var = variable.replace('Morning', 'Evening')
+console.log(new_var);
