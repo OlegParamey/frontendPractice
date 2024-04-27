@@ -8,3 +8,7 @@
  *
  * 4. Выведите в консоль измененный массив
  */
+let array = [1, 'str', true];
+console.log(array);
+array[1] = 'another string';
+console.log(array);
