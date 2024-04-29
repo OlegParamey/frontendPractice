@@ -6,3 +6,9 @@
  *
  * 3. Выведите в консоль длину результирующего массива
  */
+const arr = [];
+for (let i=0; i<10; i++){
+    arr.push(i);
+}
+console.log(arr);
+console.log(arr.length);
