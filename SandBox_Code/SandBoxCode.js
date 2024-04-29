@@ -1,20 +1,19 @@
-//'ABCDDDEFGHI'
-const GetTheLongestStringWithUnicCharacters = (str) => {
-    const arr = [''];
-    let index = 0;
-    for (char of str){
-        
-        if (arr[index].includes(char)){
-            index += 1;
-            if (arr[index] === undefined){
-                arr[index] = '';
-            }
-        }
-        
-        arr[index] = arr[index] + char;
-        
-    } 
-    return arr;
+const fnWithError = () => {
+    throw new Error('Some error')
 }
+try{
+fnWithError();
+}catch (error){
+    console.error(error);
+    console.log(error.message);
+}
+console.log('Continue');
 
-console.log(GetTheLongestStringWithUnicCharacters('ABCDDDEFGHI'));
+try{
+    const a =1;
+    a = 3;
+} catch(error){
+    console.error(error);
+    console.log(error.message)
+}
+console.log('Continue');
