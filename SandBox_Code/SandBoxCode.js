@@ -1,9 +1,9 @@
-function myFN(arg){
-    console.log(arg);
-}     
+function factorial(n) {
+    return (n != 1) ? n * factorial(n - 1) : 1;
+  }
 
+let my_Array= [1, 2, 3, 4, 5, 6];
 
-let a = 10;
-myFN(a = a+1)
+let factorialResults = my_Array.map(factorial);
 
-myFN(() => 'sdfsdf');
+console.log(factorialResults); // Выводит: [1, 2, 6, 24, 120]
