@@ -1,19 +1,9 @@
-const fnWithError = () => {
-    throw new Error('Some error')
-}
-try{
-fnWithError();
-}catch (error){
-    console.error(error);
-    console.log(error.message);
-}
-console.log('Continue');
+function myFN(arg){
+    console.log(arg);
+}     
 
-try{
-    const a =1;
-    a = 3;
-} catch(error){
-    console.error(error);
-    console.log(error.message)
-}
-console.log('Continue');
+
+let a = 10;
+myFN(a = a+1)
+
+myFN(() => 'sdfsdf');
