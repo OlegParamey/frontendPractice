@@ -1,14 +1,6 @@
-const myObj = {
-  nameis : 'Oleg',
-  commentsQty : 21,
-  hasSignedAgreement : true
-};
-
-const {nameis, commentsQty} = myObj;
-const {hasSignedAgreement} = myObj;
-
-  if(hasSignedAgreement){
-    console.log(nameis);
-    console.log(commentsQty);
-    console.log(hasSignedAgreement);
-};
+const myArray = ['apple', 'banana', 'orange'];
+const [one] = myArray;
+const [two, three] = myArray.slice(1); 
+//console.log(one);
+console.log(two);
+console.log(three);
