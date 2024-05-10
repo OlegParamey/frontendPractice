@@ -1,6 +1,13 @@
-const myArray = ['apple', 'banana', 'orange'];
-const [one] = myArray;
-const [two, three] = [myArray[myArray.length - 2], myArray[myArray.length - 1]]; 
-//console.log(one);
-console.log(two);
-console.log(three);
+const myObj = {
+  nameis : 'Oleg',
+  commentsQty : 21,
+  hasSignedAgreement : false
+}
+
+const UserInfo = ({nameis, commentsQty, hasSignedAgreement}) =>{
+  if (!hasSignedAgreement){
+    return `User ${nameis} has no comments.`;
+  }
+  return `User ${nameis} has ${commentsQty} comments.`
+};
+console.log(UserInfo(myObj));
