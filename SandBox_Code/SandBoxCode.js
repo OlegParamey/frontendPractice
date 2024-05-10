@@ -1,7 +1,14 @@
-const myArray = [1, 2, 3, 4, 5];
-const newArray = myArray.map(function (el) {
-   return el * 3
-  });
+const myObj = {
+  nameis : 'Oleg',
+  commentsQty : 21,
+  hasSignedAgreement : true
+};
 
-console.log(myArray);
-console.log(newArray);
+const {nameis, commentsQty} = myObj;
+const {hasSignedAgreement} = myObj;
+
+  if(hasSignedAgreement){
+    console.log(nameis);
+    console.log(commentsQty);
+    console.log(hasSignedAgreement);
+};
