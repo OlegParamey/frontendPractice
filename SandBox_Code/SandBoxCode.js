@@ -1,13 +1,8 @@
-const myObj = {
-  nameis : 'Oleg',
-  commentsQty : 21,
-  hasSignedAgreement : false
-}
-
-const UserInfo = ({nameis, commentsQty, hasSignedAgreement}) =>{
-  if (!hasSignedAgreement){
-    return `User ${nameis} has no comments.`;
-  }
-  return `User ${nameis} has ${commentsQty} comments.`
-};
-console.log(UserInfo(myObj));
+const a = 12;
+(a < 2)
+? console.log('2')
+: (a < 5) 
+  ? console.log('5') 
+  : (a <= 10) 
+    ? console.log('10') 
+    :console.log(` ${a} > 10`)
