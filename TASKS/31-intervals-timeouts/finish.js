@@ -12,3 +12,17 @@
  * "Сообщение номер 4"
  * "Сообщение номер 5"
  */
+function printNumbers(from, to) {
+    let current = from;
+  
+    setTimeout(function go() {
+      console.log(`Сообщение номер ${current}`);
+      if (current < to) {
+        setTimeout(go, 2000);
+      }
+      current++;
+    }, 2000);
+  }
+  
+  // использование:
+  printNumbers(1, 5);
