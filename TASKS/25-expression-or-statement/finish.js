@@ -8,6 +8,7 @@
 
 15 //expression-statement
 
+//statement
 const myObject = { //expression
   x: 10,
   y: true,
