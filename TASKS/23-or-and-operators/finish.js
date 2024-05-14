@@ -6,7 +6,7 @@
 console.log(3 || (true && null) || false)
 /*
 first of all we will enter  
-(true && null) and will get false, 
+(true && null) and will get null, 
 then we check (3 || false)
 and get 3 from there
 */
