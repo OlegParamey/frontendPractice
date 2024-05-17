@@ -6,14 +6,31 @@
  *
  * 3. Замените обычную функцию на стрелочную функцию
  */
-
-function isArrayEmpty(inputArray) {
+//ЗАДАЧА 1
+function isArrayEmpty1(inputArray) {
   if (inputArray.length > 0) {
     return 'Массив не пустой'
-  } else {
-    return 'Массив пустой'
   }
+  return 'Массив пустой'
+  
 }
 
-console.log(isArrayEmpty([1, 3]))
-console.log(isArrayEmpty([]))
+//ЗАДАЧА 2
+function isArrayEmpty2(inputArray) {
+ return inputArray.length > 0 ? 'Массив не пустой' : 'Массив пустой'
+}
+
+//ЗАДАЧА 3
+const isArrayEmpty3 = (inputArray) => inputArray.length > 0 ? 'Массив не пустой' : 'Массив пустой'
+
+//1
+console.log(isArrayEmpty1([1, 3]))
+console.log(isArrayEmpty1([]))
+
+//2
+console.log(isArrayEmpty2([1, 3]))
+console.log(isArrayEmpty2([]))
+
+//3
+console.log(isArrayEmpty3([1, 3]))
+console.log(isArrayEmpty3([]))
