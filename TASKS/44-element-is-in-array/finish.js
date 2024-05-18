@@ -7,6 +7,10 @@
  * 3. В противном случае вернуть "false"
  */
 
+function isElementInArray(inputArray, searchElement){
+    return inputArray.includes(searchElement)
+}
+
 const transports = ['Bus', 'Car', 'Bicycle', 'Airplane']
 
 console.log(isElementInArray(transports, 'Bus')) // true
