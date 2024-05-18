@@ -12,6 +12,19 @@
  * 4. Также внутри функции выведите в консоль ID поста
  */
 
+function findPostByIdAlt(postId, posts) {
+  return posts.find((post) => post.postId === postId)
+}
+
+const findPostById = function (ID, ARRAY) {
+  for ( let elem of ARRAY){
+    if(ID == elem.postId){
+      console.log(elem.postId);
+      return elem
+    }
+  }
+}
+
 const posts = [
   { postId: 1355, commentsQuantity: 5 },
   { postId: 5131, commentsQuantity: 13 },
@@ -21,3 +34,8 @@ const posts = [
 console.log(findPostById(6134, posts)) // { postId: 6134, commentsQuantity: 2 }
 
 console.log(findPostById(4511, posts)) // undefined
+
+
+console.log(findPostByIdAlt(6134, posts)) // { postId: 6134, commentsQuantity: 2 }
+
+console.log(findPostByIdAlt(4511, posts)) // undefined
