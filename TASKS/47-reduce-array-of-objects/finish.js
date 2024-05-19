@@ -1,10 +1,21 @@
 /** ЗАДАЧА 47 - Использование метода "reduce" для создания массива
  *
- * 1. Создайте функцию "popularPostsIds" с двумя параметрами "posts" и "minimalComentsQty"
+ * 1. Создайте функцию "popularPostsIds" с двумя 
+ * параметрами "posts" и "minimalComentsQty"
  *
- * 2. Эта функция "popularPostsIds" должна возвращать массив идентификаторов постов сообщений,
+ * 2. Эта функция "popularPostsIds" должна возвращать 
+ * массив идентификаторов постов сообщений,
  * у которых количество комментариев не меньше "minimalComentsQty"
  */
+
+
+const popularPostsIds = (posts, minimalComentsQty) => {
+  return posts.reduce((postsIds,post) =>
+    post.comments >= minimalComentsQty 
+    ? postsIds.concat([post.postId])
+    : postsIds
+    ,[])
+}
 
 const inputPosts = [
   {
