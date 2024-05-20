@@ -7,14 +7,16 @@
  * равными сумме всех количеств в каждой категории
  */
 
-const quantitiesByCategories = (products) => {
-  return products.reduce((categorysQtyObj, product) =>{
-    const {category, quantity} = product;
 
-    categorysQtyObj[category] = (categorysQtyObj[category] || 0) + quantity;
-    
-    return categorysQtyObj
+const quantitiesByCategories = (products) =>{
+  return products.reduce((categoryQty, products)=>{
+    const {category, quantity} = products;
+
+    categoryQty[category] = (categoryQty[category] || 0) + quantity
+
+    return categoryQty
   },{})
+  
 }
 
 

@@ -8,14 +8,12 @@
  * у которых количество комментариев не меньше "minimalComentsQty"
  */
 
-
-const popularPostsIds = (posts, minimalComentsQty) => {
-  return posts.reduce((postsIds,post) =>
+const popularPostsIds = (posts, minimalComentsQty) =>
+  posts.reduce((postsIds, post)=>
     post.comments >= minimalComentsQty 
     ? postsIds.concat([post.postId])
     : postsIds
     ,[])
-}
 
 const inputPosts = [
   {
