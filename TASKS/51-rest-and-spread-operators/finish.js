@@ -21,7 +21,7 @@ const meanScore = (...args) =>{
 
 
   return args
-  .reduce((initialVal, value)=> initialVal + value/args.length, 0)
+  .reduce((mean, value)=> mean + value/args.length, 0)
   .toFixed(2)
 }
 
