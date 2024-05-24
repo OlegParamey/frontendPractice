@@ -1,6 +1,11 @@
-import {sum as NumberSum, minus as NumberDiff} from './moduleOne.mjs'
+import {
+    sum as NumberSum, 
+    minus as NumberDiff, 
+    mult as NumberMult
+} from './moduleOne.mjs'
 
-const resS = NumberSum(10, 20);
-console.log(resS);
-const resD = NumberDiff(100, 53);
-console.log(resD);
+console.log(NumberSum(10, 20))
+
+console.log(NumberDiff(100, 53))
+
+console.log(NumberMult(34, 53))
