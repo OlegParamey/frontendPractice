@@ -1,4 +1,6 @@
-import NumbersSuma from './moduleOne.mjs'
+import {sum, minus} from './moduleOne.mjs'
 
-const res = NumbersSuma(10, 20);
-console.log(res);
+const resS = sum(10, 20);
+console.log(resS);
+const resD = minus(100, 53);
+console.log(resD);
