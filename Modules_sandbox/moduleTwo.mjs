@@ -1,6 +1,6 @@
-import {sum, minus} from './moduleOne.mjs'
+import {sum as NumberSum, minus as NumberDiff} from './moduleOne.mjs'
 
-const resS = sum(10, 20);
+const resS = NumberSum(10, 20);
 console.log(resS);
-const resD = minus(100, 53);
+const resD = NumberDiff(100, 53);
 console.log(resD);
