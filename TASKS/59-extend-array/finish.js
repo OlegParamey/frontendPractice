@@ -28,3 +28,6 @@ const newArray = new ExtendedArray(1, 2, 'str3', 5, 9, 10, 'str')
 
 console.log(newArray.sum())
 console.log(newArray.onlyNumbers())
+
+newArray.forEach((el)=>console.log(el))
+console.log(newArray.map((element)=> typeof(element)==='number' ? element*2 : element))
