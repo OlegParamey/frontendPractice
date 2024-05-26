@@ -1,17 +1,9 @@
-class Comment {
-    constructor(text){
-        this.text = text;
-        this.votesQty = 0
-    }
-
-    upvote(){
-        this.votesQty += 1
-    }
-
-    static mergeComments(first, second){
-        return `${first} ${second}`
+class NumbersArray extends Array{
+    sum(){
+        return this.reduce((el, acc)=> acc += el ,0)
     }
 }
 
-const myComment = new Comment('My comment')
-console.log(Comment.mergeComments('Some', 'some'))
+const myArray = new NumbersArray(2, 5, 7, 7)
+console.log(myArray.sum())
+console.log(myArray)
