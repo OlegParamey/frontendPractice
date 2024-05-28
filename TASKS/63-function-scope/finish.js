@@ -17,5 +17,5 @@ function myFn2(a) {
   let c = 5
   console.log(a, b, c, d)
 }
-
+//(let b = undefined)undefined, (const b = 2)2, (let c = 5)5, (let d = 15)15
 myFn1()
