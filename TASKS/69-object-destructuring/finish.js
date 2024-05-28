@@ -6,14 +6,25 @@
  * Результат умножения верните из функции
  */
 
+
+
 const objectWithNumbers = {
   x: 5,
   y: 20,
   z: 3,
 }
 
-// Создайте функцию здесь
+const mult1 = ({x, y, z}) => x * y * z
+
+const mult = (object) =>{
+  const {x, y, z} = object
+  return x * y * z
+}
 
 const result = mult(objectWithNumbers)
 console.log(result)
+//300
+
+const result1 = mult1(objectWithNumbers)
+console.log(result1)
 // 300
