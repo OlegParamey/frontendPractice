@@ -19,9 +19,9 @@ const objectWithNumbers = {
 function sumObjectValues(nums) {
   let sum = 0
 
-  Object.keys(nums).forEach((key) => {
-    if (typeof nums[key] === 'number') {
-      sum += nums[key]
+  Object.values(nums).forEach((value) => {
+    if (typeof value === 'number') {
+      sum += value
     }
   })
 
