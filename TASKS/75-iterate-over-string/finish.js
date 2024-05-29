@@ -15,6 +15,5 @@ for(char of str){
     }
 }
 
-
 console.log(vowelsCount)
 // 9
