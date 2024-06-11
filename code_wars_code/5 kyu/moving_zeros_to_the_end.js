@@ -1,7 +1,6 @@
 function moveZeros(arr) {
-  let zeroes = arr.filter((element)=> element === 0)
-  let nonZeroes = arr.filter((element)=> element !== 0)
-  return nonZeroes.concat(zeroes)
+  return arr.filter((element)=> element !== 0)
+  .concat(arr.filter((element)=> element === 0))
 }
 
 console.log(moveZeros([false, 1, 0, 1, 2, 0, 1, 3, "a"]));
