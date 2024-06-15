@@ -4,6 +4,14 @@ const getData = async (url) => {
     return json
 }
 
-getData('https://jsonplaceholder.typicode.com/todos/2')
-    .then(data => console.log(data))
-    .catch(error => console.log(error.message))
+const url = 'https://jsonplaceholder.typicode.com/todos/2'
+
+const fetchData= async () =>{
+try{
+    const data = await getData(url)
+    console.log(data)
+} catch(error) {
+    console.log(error.message)
+}}
+
+fetchData()
