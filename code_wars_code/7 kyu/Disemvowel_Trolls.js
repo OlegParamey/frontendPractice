@@ -1,4 +1,4 @@
-function disemvowel(str) {
+/*function disemvowel(str) {
   const vovels = ['e', 'u', 'i', 'o', 'a']
   return str
     .split(' ')
@@ -13,5 +13,9 @@ function disemvowel(str) {
     })
     .join(' ')
 }
+*/
 
+function disemvowel(str) {
+  return str.replace(/[aieou]/gi, '')
+}
 console.log(disemvowel('This website is for losers LOL'))
